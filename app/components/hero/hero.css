@@ -1,4 +1,71 @@
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   background-color: #d3d2c7;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #ffffff;
+  padding-inline: 2rem;
+}
+
+.hero-heading {
+  font-size: 7rem;
+  font-family: "Cinema", Fallback, sans-serif;
+  letter-spacing: 10px;
+  line-height: 0.9;
+  color: #d3d2c7;
+}
+
+.hero-subheading {
+  font-size: 2rem;
+  line-height: 0;
+  font-weight: 200;
+}
+
+.hero-container-left,
+.hero-container-right {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-container-left {
+    height: 25vh;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
 }

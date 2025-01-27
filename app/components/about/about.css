@@ -1,0 +1,21 @@
+.about {
+  background-color: #495f41;
+  min-height: 75vh;
+  color: #ffffff;
+  padding: 4rem 5rem;
+}
+
+.about-header {
+  font-size: 4rem;
+  font-family: "Cinema", Fallback, sans-serif;
+  opacity: 0;
+  transform: translateX(-10%);
+}
+
+.about-content {
+  transform: translateY(100%);
+}
+
+.about-content-wrapper {
+  overflow: hidden;
+}
