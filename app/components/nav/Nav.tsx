@@ -38,6 +38,43 @@ const menuLinks = [
   },
 ];
 
+const columnOneLinks = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "About",
+    path: "/about",
+  },
+];
+
+const columnTwoLinks = [
+  {
+    label: "Residential",
+    path: "/residential",
+  },
+  {
+    label: "Housing Development",
+    path: "/development",
+  },
+  {
+    label: "Commercial",
+    path: "/commercial",
+  },
+];
+
+const columnThreeLinks = [
+  {
+    label: "Portfolio",
+    path: "/portfolio",
+  },
+  {
+    label: "Contact",
+    path: "/contact",
+  },
+];
+
 export default function Nav() {
   const container = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -52,10 +89,20 @@ export default function Nav() {
     () => {
       tl.current = gsap
         .timeline({ paused: true })
-        .to(".nav-overlay", {
-          top: "0",
-          duration: 0.4,
+        .to(".overlay", {
+          left: 0,
+          duration: 0.1,
           ease: "power4.inOut",
+        })
+        .to(".overlay", {
+          opacity: 1,
+          duration: 0.1,
+          delay: 0.1,
+        })
+        .to(".nav-mobile-menu", {
+          left: 0,
+          duration: 0.3,
+          delay: -0.1,
         })
         .to(".link", {
           translateY: 0,
@@ -80,14 +127,64 @@ export default function Nav() {
     <header ref={container}>
       <nav className="navbar">
         <div>
-          <p className="nav-logo">Enhance</p>
+          <p className="nav-logo">
+            Enhance
+            <br />
+            Technical
+            <br />
+            Consulting
+          </p>
         </div>
-        <div onClick={handleClick}>
-          <p className="nav-button">{isOpen ? "Close" : "Menu"}</p>
+        <div>
+          <div className="block lg:hidden nav-button" onClick={handleClick}>
+            <p>Menu</p>
+          </div>
+          <div className="nav-large-menu">
+            <div className="nav-large-container">
+              {columnOneLinks.map((link, index) => (
+                <div key={index}>
+                  <Link
+                    href={link.path}
+                    className="nav-large-link hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </div>
+              ))}
+            </div>
+            <div className="nav-large-container">
+              {columnTwoLinks.map((link, index) => (
+                <div key={index}>
+                  <Link
+                    href={link.path}
+                    className="nav-large-link hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </div>
+              ))}
+            </div>
+            <div className="nav-large-container">
+              {columnThreeLinks.map((link, index) => (
+                <div key={index}>
+                  <Link
+                    href={link.path}
+                    className="nav-large-link hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </nav>
-      <div className="nav-overlay">
-        <div className="nav-left-container">
+      <div className="overlay"></div>
+      <div className="nav-mobile-menu">
+        <div className="close-button" onClick={handleClick}>
+          <button>Close</button>
+        </div>
+        <div>
           {menuLinks.map((link, index) => (
             <div key={index} className="nav-link-container">
               <div className="link">
@@ -102,7 +199,6 @@ export default function Nav() {
             </div>
           ))}
         </div>
-        <div></div>
       </div>
     </header>
   );
