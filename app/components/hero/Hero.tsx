@@ -1,9 +1,6 @@
 "use client";
 import "./hero.css";
 
-import gsap from "gsap";
-import useGSAP from "@gsap/react";
-
 import { useRef } from "react";
 
 export default function Hero() {
