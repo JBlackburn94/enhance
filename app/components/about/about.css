@@ -1,21 +1,45 @@
-.about {
-  background-color: #495f41;
-  min-height: 75vh;
-  color: #ffffff;
-  padding: 4rem 5rem;
+.about-section {
+  padding: 2rem;
+  min-height: 60vh;
+  background-color: #2e362c;
+  color: white;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 50%;
+  gap: 2rem;
 }
 
 .about-header {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-family: "Cinema", Fallback, sans-serif;
-  opacity: 0;
-  transform: translateX(-10%);
 }
 
-.about-content {
-  transform: translateY(100%);
+.about-p {
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
-.about-content-wrapper {
-  overflow: hidden;
+.about-link-wrapper {
+  display: flex;
+  gap: 4rem;
+}
+
+.about-link-wrapper a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
+  border-bottom: 1px solid white;
+  line-height: 2;
+  width: 150px;
+}
+
+@media (max-width: 992px) {
+  .about-wrapper {
+    width: 100%;
+  }
 }
