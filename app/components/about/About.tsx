@@ -15,8 +15,18 @@ export default function About() {
           advisory Technical expert.
         </p>
         <div className="about-link-wrapper">
-          <Link href={"/"}>Contact</Link>
-          <Link href={"/"}>Services</Link>
+          <Link
+            className="hover:w-[200px] transition-all ease-in-out duration-200"
+            href={"/"}
+          >
+            Contact
+          </Link>
+          <Link
+            className="hover:w-[200px] transition-all ease-in-out duration-200"
+            href={"/"}
+          >
+            Services
+          </Link>
         </div>
       </div>
     </section>

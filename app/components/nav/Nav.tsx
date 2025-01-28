@@ -13,20 +13,8 @@ const menuLinks = [
     label: "Home",
   },
   {
-    path: "/about",
-    label: "About",
-  },
-  {
-    path: "/residential",
-    label: "Residential",
-  },
-  {
-    path: "/commercial",
-    label: "Commercial",
-  },
-  {
-    path: "/development",
-    label: "Development",
+    path: "/services",
+    label: "Services",
   },
   {
     path: "/portfolio",
@@ -43,24 +31,12 @@ const columnOneLinks = [
     label: "Home",
     path: "/",
   },
-  {
-    label: "About",
-    path: "/about",
-  },
 ];
 
 const columnTwoLinks = [
   {
-    label: "Residential",
-    path: "/residential",
-  },
-  {
-    label: "Housing Development",
-    path: "/development",
-  },
-  {
-    label: "Commercial",
-    path: "/commercial",
+    label: "Services",
+    path: "/services",
   },
 ];
 

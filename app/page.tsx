@@ -1,6 +1,6 @@
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
-import Portfolio from "./components/landingPort/Portfolio";
+import Portfolio from "./components/companyInfo/Company";
 
 export default function Home() {
   return (
