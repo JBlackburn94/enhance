@@ -1,13 +1,38 @@
 "use client";
 import "./hero.css";
 
-import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
-  const heroRef = useRef(null);
+  const tl = gsap.timeline();
+
+  useGSAP(() => {
+    tl.to(".hero-video", {
+      padding: "10rem",
+      scrollTrigger: {
+        trigger: ".hero-content",
+        start: "40% 30%",
+        end: "bottom 30%",
+        scrub: true,
+      },
+    }).to(".hero-overlay", {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: ".hero-content",
+        start: "60% 10%",
+        end: "bottom 30%",
+        scrub: true,
+      },
+    });
+  });
 
   return (
-    <section className="hero" ref={heroRef}>
+    <section className="hero">
+      <div className="hero-overlay"></div>
       <div className="hero-content">
         <div className="hero-container">
           <div>
