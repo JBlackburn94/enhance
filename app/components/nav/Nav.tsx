@@ -103,15 +103,6 @@ export default function Nav() {
     <header ref={container}>
       <nav className="navbar">
         <div>
-          <p className="nav-logo">
-            Enhance
-            <br />
-            Technical
-            <br />
-            Consulting
-          </p>
-        </div>
-        <div>
           <div className="block lg:hidden nav-button" onClick={handleClick}>
             <p>Menu</p>
           </div>
