@@ -36,6 +36,7 @@
   z-index: 5;
   bottom: 0;
   padding-inline: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-heading h2 {
@@ -45,7 +46,7 @@
 
 @media (max-width: 1020px) {
   .company-container {
-    width: 50%;
+    width: 80%;
     height: 90vh;
   }
 }

@@ -7,7 +7,7 @@ import landownerImage from "../../../public/landowner-card-image.jpg";
 
 export default function Portfolio() {
   return (
-    <div className="company-section">
+    <section className="company-section">
       <div className="container-wrapper">
         <ServicesCard
           cardHeading="Landowners"
@@ -25,6 +25,6 @@ export default function Portfolio() {
           alt="An image of a refurbished kitchen"
         />
       </div>
-    </div>
+    </section>
   );
 }
