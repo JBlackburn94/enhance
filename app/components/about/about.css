@@ -42,4 +42,9 @@
   .about-wrapper {
     width: 100%;
   }
+
+  .about-link-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

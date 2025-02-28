@@ -5,17 +5,17 @@
 }
 
 .container-wrapper {
-  border: 1px solid blue;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 @media screen and (max-width: 1020px) {
   .container-wrapper {
     flex-direction: column;
+    padding: 1rem;
   }
 }
