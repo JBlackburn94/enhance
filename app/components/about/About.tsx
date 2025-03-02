@@ -14,20 +14,6 @@ export default function About() {
           scale housing/commercial development we are your one stop shop
           advisory Technical expert.
         </p>
-        <div className="about-link-wrapper">
-          <Link
-            className="hover:w-[200px] transition-all ease-in-out duration-200"
-            href={"/"}
-          >
-            Contact
-          </Link>
-          <Link
-            className="hover:w-[200px] transition-all ease-in-out duration-200"
-            href={"/"}
-          >
-            Services
-          </Link>
-        </div>
       </div>
     </section>
   );

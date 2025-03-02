@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   background-color: #e1e1d7;
-  cursor: pointer;
 }
 
 .card-image-container {
@@ -29,7 +28,7 @@
 }
 
 .card-heading {
-  height: 10%;
+  height: 20%;
   color: white;
   display: flex;
   position: absolute;
@@ -37,6 +36,12 @@
   bottom: 0;
   padding-inline: 1rem;
   margin-bottom: 1rem;
+  flex-direction: column;
+}
+
+.services-button {
+  background-color: #2e362c;
+  padding: 1rem 2rem;
 }
 
 .card-heading h2 {

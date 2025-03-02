@@ -13,7 +13,7 @@ const menuLinks = [
     label: "Home",
   },
   {
-    path: "/services",
+    path: "#services",
     label: "Services",
   },
   {
@@ -36,7 +36,7 @@ const columnOneLinks = [
 const columnTwoLinks = [
   {
     label: "Services",
-    path: "/services",
+    path: "#services",
   },
 ];
 
