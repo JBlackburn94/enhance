@@ -13,16 +13,19 @@ export default function Portfolio() {
           cardHeading="Landowners"
           src={landownerImage}
           alt="An image of some land developement"
+          cardLink="/landowners"
         />
         <ServicesCard
           cardHeading="Developers"
           src={developerImage}
           alt="An image of a new build housing development"
+          cardLink="/developers"
         />
         <ServicesCard
           cardHeading="Homeowners"
           src={homeownerImage}
           alt="An image of a refurbished kitchen"
+          cardLink="/homeowners"
         />
       </div>
     </section>

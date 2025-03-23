@@ -6,9 +6,15 @@ interface cardProps {
   src: StaticImageData;
   alt: string;
   cardHeading: string;
+  cardLink: string;
 }
 
-export default function ServicesCard({ src, alt, cardHeading }: cardProps) {
+export default function ServicesCard({
+  src,
+  alt,
+  cardHeading,
+  cardLink,
+}: cardProps) {
   return (
     <div className="company-container">
       <div className="card-image-container">
@@ -16,7 +22,7 @@ export default function ServicesCard({ src, alt, cardHeading }: cardProps) {
       </div>
       <div className="card-heading">
         <h2>{cardHeading}</h2>
-        <Link className="services-button hover:underline" href={"#"}>
+        <Link className="services-button hover:underline" href={cardLink}>
           Learn More
         </Link>
       </div>
