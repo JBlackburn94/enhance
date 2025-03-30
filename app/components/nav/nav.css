@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  backdrop-filter: blur(10px);
+  background-color: #2e362c;
 }
 
 .nav-button {
@@ -40,6 +40,7 @@
 .link-item {
   font-size: 2rem;
   font-weight: 200;
+  text-decoration: none;
 }
 
 .overlay {
@@ -76,6 +77,7 @@
 .link {
   transform: translateY(100px);
   margin-top: 1.2rem;
+  color: #fff;
 }
 
 .nav-large-menu {
@@ -95,6 +97,7 @@
 .nav-large-link {
   font-weight: 200;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
