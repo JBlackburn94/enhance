@@ -36,7 +36,7 @@ export default function page() {
             <h2>What we offer:</h2>
             <ul>
               <div className="inner-list-item">
-                <li>List of reports to include in a vendor's pack.</li>
+                <li>List of reports to include in a vendors pack.</li>
                 <li>
                   Existing constraints associated with the site for
                   consideration.
