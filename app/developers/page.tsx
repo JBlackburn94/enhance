@@ -26,7 +26,7 @@ export default function page() {
           </div>
           <hr />
           <div className="content-paragraph">
-            <p></p>
+            <h2>At Enhance we provide support at all 3 key stages of build:</h2>
             <ul>
               <li className="font-bold">Pre-Development</li>
               <div className="inner-list-item">

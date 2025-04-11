@@ -65,14 +65,6 @@ export default function page() {
                 </li>
               </div>
             </ul>
-            <div className="content-paragraph">
-              <p>
-                The items above allow you the homeowner to have as much
-                involvement or as little as you like. Advice, support and
-                project management can be provided to suit your needs and your
-                budget.
-              </p>
-            </div>
           </div>
         </div>
       </div>
